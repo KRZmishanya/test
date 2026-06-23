@@ -4,8 +4,10 @@
 #C = A + B
 #print(C)
 import numpy as np
-a = np.array([0.0, 10.0, 20.0, 30.0])
-b = np.array([1.0, 2.0, 3.0])
-c = a[:, np.newaxis] + b
+
+a = np.ones((3, 4),dtype = int)
+b = np.arange(12).reshape((4, 3))
+print(a)
+print(b)
+c = np.dot(a,b)
 print(c)
-print(np.__version__)
